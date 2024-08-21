@@ -1,3 +1,4 @@
+// all methods get callback function
 // foreach method - loop
 
 // const nums = [1,2,3,4,5,6,7,8,9,10];
@@ -230,3 +231,143 @@
 
 
 // find method 
+// return only first occurence
+// const users = [
+//     {'userId':1, 'userName':'jack'},
+//     {'userId':2, 'userName':'harry'},
+//     {'userId':3, 'userName':'ron'},
+// ]
+
+// const user = users.find((user) => {
+//     return user.userId === 3;
+// })
+
+// console.log(user);
+
+
+
+
+
+
+// every method 
+// const nums = [2,3,45,6,99];
+
+// check if every numbers is even give true else false  
+// const isEvenArr = nums.every((n) => {
+//     return n%2 === 0;
+// })
+
+// console.log(isEvenArr)
+
+
+// const userCart = [
+//     {
+//         'productId':1, 
+//         'productName':'Lenovo Thinpad', 
+//         'productPrice':38000
+//     },
+
+//     {
+//         'productId':2, 
+//         'productName':'Dell Latitude', 
+//         'productPrice':39000
+//     },
+
+//     {
+//         'productId':3, 
+//         'productName':'Zebronics laptop', 
+//         'productPrice':28000
+//     },
+// ]
+
+// const ans = userCart.every((item) => {
+//     return item.productPrice < 40000;
+// })
+
+// console.log(ans)
+
+
+
+
+
+
+
+// some method 
+// one of any num is even then return true
+// const nums = [2,3,45,6,99];
+// const isNumEven = nums.some((n) => {
+//     return n%2 === 0;
+// })
+
+// console.log(isNumEven)
+
+
+// const userCart = [
+//     {
+//         'productId':1, 
+//         'productName':'Lenovo Thinpad', 
+//         'productPrice':38000
+//     },
+
+//     {
+//         'productId':2, 
+//         'productName':'Dell Latitude', 
+//         'productPrice':39000
+//     },
+
+//     {
+//         'productId':3, 
+//         'productName':'Zebronics laptop', 
+//         'productPrice':28000
+//     },
+// ]
+
+// const ans = userCart.some((item) => {
+//     return item.productPrice > 38000;
+// })
+
+// console.log(ans)
+
+
+
+
+
+
+
+
+
+// fill method 
+// const zeros = new Array(10).fill(0)
+// console.log(zeros)
+
+// const arr = [1,3,5,6,7,2];
+// arr.fill(-1, 3, 6);
+// console.log(arr)
+
+
+
+
+
+
+
+
+// splice method 
+// start, delete, insert  
+const arr = ['item1', 'item2', 'item3'];
+const deletedItem = arr.splice(1,1);//delete index 1 item
+console.log(arr)
+console.log(deletedItem)
+
+arr.splice(1,0,'new item');
+console.log(arr);
+
+const deleted = arr.splice(1,1,'item2')
+console.log(deleted)
+console.log(arr)
+
+
+
+
+
+
+
