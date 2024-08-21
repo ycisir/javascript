@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+
+    <div style="width: min-content; border: 1px solid; padding: 5px; margin-left: auto; margin-right: auto;">
+        <label for="">Enter the value of A: </label>
+        <input type="text" id="A"><br><br>
+    
+        <label for="">Enter operator: </label>
+        <input type="text" id="Op"><br><br>
+    
+        <label for="">Enter the value of B: </label>
+        <input type="text" id="B"><br><br>
+        <input type="submit" value="calculate" onclick="getValues()">
+        <div id="ans"></div>
+    </div>
+
+    
+
+    <script>
+        const getValues = () => {
+            // let ans = 0;
+            let a = +document.getElementById('A').value;
+            let o = document.getElementById('Op').value;
+            let b = +document.getElementById('B').value;
+            let res = document.querySelector("#ans");
+
+            switch(o) {
+                case '+':
+                    res.innerHTML = `<p>result: ${a+b}</p>`;
+                    break;
+                case '-':
+                    res.innerHTML = `<p>result: ${a-b}</p>`;
+                    break;
+                case '*':
+                    res.innerHTML = `<p>result: ${a*b}</p>`;
+                    break;
+                case '/':
+                    res.innerHTML = `<p>result: ${a/b}</p>`;
+                    break;
+                case '%':
+                    res.innerHTML = `<p>result: ${a%b}</p>`;
+                    break;
+                default:
+                res.innerHTML = `<p>result: invalid input</p>`;
+            }
+
+            
+            
+        }
+        
+    </script>
+</body>
+</html>
