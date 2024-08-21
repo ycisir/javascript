@@ -70,30 +70,3 @@
 // obj[k2] = v2;
 
 // console.log(obj)
-
-
-function solve(){
-    let a = +document.getElementById('val1').value
-    let op = document.getElementById('operator').value
-    let b = +document.getElementById('val2').value
-    let ans = 0;
-
-    switch(op){
-        case '+': {
-            ans = a+b;
-            break
-        }
-
-        case '-': {
-            ans = a-b;
-        }
-
-    }
-
-    return ans;
-}
-
-console.log(solve())
-
-// let res = document.getElementById('res').value
-// res+=res
