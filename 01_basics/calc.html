@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            width: min-content; 
+            border: 1px solid; 
+            padding: 10px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1 style="text-align: center;">Calculator</h1>
 
-    <div style="width: min-content; border: 1px solid; padding: 5px; margin-left: auto; margin-right: auto;">
-        <label for="">Enter the value of A: </label>
-        <input type="text" id="A"><br><br>
+    <div>
+        <label for="">Value of A: </label>
+        <input type="text" id="A">
     
-        <label for="">Enter operator: </label>
-        <input type="text" id="Op"><br><br>
+        <label for="">Operator: </label>
+        <input type="text" id="Op">
     
-        <label for="">Enter the value of B: </label>
-        <input type="text" id="B"><br><br>
+        <label for="">Value of B: </label>
+        <input type="text" id="B">
         <input type="submit" value="calculate" onclick="getValues()">
-        <div id="ans"></div>
+        <span id="ans"></span>
     </div>
 
     
