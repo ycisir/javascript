@@ -353,21 +353,14 @@
 
 // splice method 
 // start, delete, insert  
-const arr = ['item1', 'item2', 'item3'];
-const deletedItem = arr.splice(1,1);//delete index 1 item
-console.log(arr)
-console.log(deletedItem)
+// const arr = ['item1', 'item2', 'item3'];
+// const deletedItem = arr.splice(1,1);//delete index 1 item
+// console.log(arr)
+// console.log(deletedItem)
 
-arr.splice(1,0,'new item');
-console.log(arr);
+// arr.splice(1,0,'new item');
+// console.log(arr);
 
-const deleted = arr.splice(1,1,'item2')
-console.log(deleted)
-console.log(arr)
-
-
-
-
-
-
-
+// const deleted = arr.splice(1,1,'item2')
+// console.log(deleted)
+// console.log(arr)
