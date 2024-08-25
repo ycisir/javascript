@@ -453,46 +453,33 @@
 
 // getter and setter 
 
-class CreateUser {
-    constructor(name, email) {
-        this.name = name;
-        this.email = email;
-    }
+// class CreateUser {
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+//     }
 
-    // static method 
-    static priv() {
-        console.log('alert private area cant access by objects');
-    }
+//     // static method 
+//     static priv() {
+//         console.log('alert private area cant access by objects');
+//     }
 
-    static priva = 'static property'
+//     static priva = 'static property'
 
-    get getinfo() {
-        console.log('name:',this.name);
-        console.log('email:',this.email);
-    }
+//     get getinfo() {
+//         console.log('name:',this.name);
+//         console.log('email:',this.email);
+//     }
 
-    set setInfo(user) {
-        const [name, email] = user;
-        this.name = name;
-        this.email = email;
-    }
-}
+//     set setInfo(user) {
+//         const [name, email] = user;
+//         this.name = name;
+//         this.email = email;
+//     }
+// }
 
-const jack = new CreateUser();
-jack.setInfo = ['jack sparrow', 'jack@bp.ship'];
-jack.getinfo;
+// const jack = new CreateUser();
+// jack.setInfo = ['jack sparrow', 'jack@bp.ship'];
+// jack.getinfo;
 // jack.priv(); // error
 // CreateUser.priv();
-
-
-
-
-
-
-
-
-
-
-
-
-
