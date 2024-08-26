@@ -141,15 +141,15 @@
 
 // lexical environment 
 
-const lName = 'sparrow'; // lexical env of 'printName'
+// const lName = 'sparrow'; // lexical env of 'printName'
 
-const printName = function() {
-    const fName = 'jack';
-    function print() {
-        console.log(fName);
-        console.log(lName);
-    }
-    print();
-}
+// const printName = function() {
+//     const fName = 'jack';
+//     function print() {
+//         console.log(fName);
+//         console.log(lName);
+//     }
+//     print();
+// }
 
-printName();
+// printName();
