@@ -17,5 +17,18 @@
 
 .form-todo {
     margin-top: 11px;
+    margin-bottom: 11px;
     min-height: 5vh;
+}
+
+.todo-list {
+    border: 1px solid #eee;
+    margin-top: 15px;
+    max-width: 230px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.todo-list > li {
+    margin: 10px 0;
 }
