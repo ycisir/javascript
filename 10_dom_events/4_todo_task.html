@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="todo_task.js" defer></script>
+    <title>Manage todos</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+.section-todo {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.form-todo {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    min-height: 5vh;
+}
+
+.todo-list {
+    border: 1px solid #333;
+    padding: 10px;
+    max-width: 530px;
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.todo-list > li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <section class="section-todo container">
+        <h2 id="heading">Your plan for today ? <span style="display: none;">Something</span></h2>
+        <form action="" class="form-todo">
+            <input type="text" name="" id="" placeholder="Add todo">
+            <input type="submit" value="Add" class="btn">
+        </form>
+        <ul class="todo-list">
+            <li>
+                <span class="text">items</span>
+                <div class="todo-btns">
+                    <button class="todo-btn done">Done</button>
+                    <button class="todo-btn remove">Remove</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

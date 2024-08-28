@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="event_bubbling_capturing.js" defer></script>
+    <title>Event bubbling | capturing | delegation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            min-width: 100px;
+            min-height: 100px;
+            padding: 5rem;
+            color: white;
+            cursor: pointer;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .grandparent {
+            background: #b1d4e0;
+            color: black;
+        }
+        .parent {
+            background: #145da0;
+        }
+        .child {
+            background: #0c2d48;
+        }
+    </style>
+
+</head>
+    <main>
+        <div class="grandparent box">
+            grandparent
+            <div class="parent box">
+                parent
+                <div class="child box">
+                    child
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
